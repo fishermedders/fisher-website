@@ -1,0 +1,46 @@
+# site
+
+hi, huge fucking nerd! if you want to know how this site was made, it is comprised of the following tech:
+
+* react (it's a spa!)
+* mdx
+  * markdown is cool as shit, and this page is basically just a markdown file that i can use react components in!
+* cloudflare pages & r2 + github
+  * i commit, push, cloudflare grabs it up, builds it, and serves it. for asset storage i use r2. cheap & easy
+  * this whole site lives in a public repo
+    * go find it!
+
+i really like this setup, because it all revolves around free services that i KNOW will be around for a good while. microsoft github kinda worries me (i have a lot of thoughts on the state of microsoft these days), as you see big projects leaving github all of the time, but for mr. normal like myself, it is probably something i should not worry about
+
+<hr />
+
+# why
+this url used to link to a wordpress site that i paid a few bucks a month to host, but at that point, i'd rather do all of the labor and setup to get everything working properly and know how it works.
+
+this also gives me the benefit of:
+* i don't have to do the "is there a plugin for this" dance
+* i don't have to make css changes in a form and go through that pain
+* speedy page loads
+* hotloading on development
+* etc, etc, etc (it is really good)
+
+it also feels good that a post on this site is literally just a file. like, i can click it and see what's inside. i don't have to wonder what kind of wizard magic wordpresswizweebly does in the back end to store my file and pray to god i can export them all one day if i need to. i know where you live, file.
+
+this is what a blog post looks like:
+
+```mdx
+---
+title: "my cool friggin post"
+dateposted: "2026-01-29"
+slug: "my-cool-friggin-slug"
+tags: ["sauce-de-ausome", "mdx", "cool"]
+---
+
+i just write my content here and save it to a file
+
+it is so friggin easy
+```
+
+most of the core functionality of this site (routing and bloge posts lol) was made in one night. we will see how this holds up and if i can css good
+
+i hope i css good.

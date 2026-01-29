@@ -6,6 +6,12 @@ export default function Navbar() {
       <nav className="navbar" aria-label="Main navigation">
         <ul>
           <li>
+            <span>
+              <b>fm</b>
+            </span>
+          </li>
+          <li>|</li>
+          <li>
             <a href="/">home</a>
           </li>
           <li>
@@ -18,7 +24,7 @@ export default function Navbar() {
             <a href="/movies">movies</a>
           </li>
           <li>
-            <a href="/writing">writing</a>
+            <a href="/site">site</a>
           </li>
         </ul>
       </nav>
