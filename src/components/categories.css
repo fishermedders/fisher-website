@@ -1,0 +1,14 @@
+.post-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.post-categories-post {
+    eborder-top: 2px solid #eee;
+    paddingtop: 10px;
+}
+
+.post-categories-post h2 {
+    margin-bottom: 0px;
+}

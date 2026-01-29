@@ -4,7 +4,6 @@ import { posts } from "../lib/posts";
 export function PostList() {
   return (
     <div className="post-list">
-      <h2>Latest Posts</h2>
       {posts.map((post) => (
         <article key={post.slug}>
           <Link to={`/${post.slug}`}>
