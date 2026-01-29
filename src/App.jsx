@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import Fisher from "./pages/Fisher.mdx";
 import Music from "./pages/Music.mdx";
 import Movies from "./pages/Movies.mdx";
+import PostPage from "./pages/PostPage.jsx";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/fisher" element={<Fisher />} />
           <Route path="/music" element={<Music />} />
           <Route path="/movies" element={<Movies />} />
+          <Route path="/:slug" element={<PostPage />} />
         </Routes>
       </main>
     </BrowserRouter>

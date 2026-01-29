@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
 
 :root {
+    --theme-bkg: #161616;
     --theme-invert: #f1f1f1;
 }
 
 body {
-    background-color: #161616;
+    background-color: var(--theme-bkg);
 }
 
 html {
@@ -43,4 +44,31 @@ main {
 
 img {
     max-width: 100%;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: var(--theme-invert);
+}
+
+hr {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double var(--theme-invert);
+    color: var(--theme-invert);
+    text-align: center;
+}
+hr:after {
+    color: var(--theme-invert);
+    content: "fm";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: var(--theme-bkg);
 }
