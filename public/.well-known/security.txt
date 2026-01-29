@@ -1,0 +1,4 @@
+Contact: mailto:fishermedders@gmail.com
+Expires: 2026-12-31T17:59:00.000Z
+Preferred-Languages: en
+Canonical: https://fishers.blog/.well-known/security.txt
