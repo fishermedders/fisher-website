@@ -1,0 +1,167 @@
+---
+title: "How Apple TV Changed the way I watch TV"
+dateposted: "2026-01-29"
+slug: "how-apple-tv-changed-the-way-i-watch-tv"
+tags: ["technology"]
+---
+
+import React, { useEffect, useRef } from 'react';
+import Chart from 'chart.js/auto'; 
+
+export const TVComplexityChart = () => {
+  const chartRef = useRef(null);
+  const chartInstance = useRef(null);
+
+  useEffect(() => {
+    if (chartInstance.current) {
+      chartInstance.current.destroy();
+    }
+
+    const ctx = chartRef.current.getContext('2d');
+
+    chartInstance.current = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['1950s', '1960s', '1970s', '1980s', '1990s', '2000s', '2010s', '2020s'],
+        datasets: [{
+          label: 'stupid shit index',
+          data: [1, 2, 5, 9, 15, 25, 80, 100],
+          borderColor: 'rgb(255, 255, 255)',
+          backgroundColor: 'rgba(255, 255, 255, 0.2)',
+          fill: true,
+          tension: 0.4,
+          pointRadius: 6,
+          pointHoverRadius: 10
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          tooltip: {
+            displayColors: false,
+            callbacks: {
+              label: (context) => `index level: ${context.raw}/100`,
+              footer: (tooltipItems) => {
+                const decade = tooltipItems[0].label;
+                const milestones = {
+                  '1950s': 'one knob. you\'ve got tv. yay!',
+                  '1960s': 'go adjust some rabbit ears',
+                  '1970s': 'you\'ve got wood paneling (honestly pretty cool)',
+                  '1980s': 'first vcrs and the likes',
+                  '1990s': 'early on-screen menus',
+                  '2000s': 'go on, update your firmware on your tv',
+                  '2010s': 'ads on your homescreen!',
+                  '2020s': 'big brother, etc, you get the idea'
+                };
+                return `\n${milestones[decade]}`;
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: { 
+              display: true, 
+              text: 'stupid shit index (ssi)',
+              font: { weight: 'bold' } 
+            },
+            ticks: {
+              callback: (value) => {
+                if (value === 0) return 'not stupid shit';
+                if (value === 50) return 'partially stupid shit';
+                if (value === 100) return 'stupid shit';
+                return '';
+              }
+            }
+          }
+        }
+      }
+    });
+
+    return () => {
+      if (chartInstance.current) {
+        chartInstance.current.destroy();
+      }
+    };
+  }, []);
+
+  return (
+    <div style={{ position: 'relative', height: '400px', width: '100%', padding: '20px' }}>
+      <canvas ref={chartRef} />
+    </div>
+  );
+};
+
+it hasn't. not really. i still watch stupid youtube videos of people making silly things and really hyperfixation level tv shows and videos about what i'm interested in at the moment. but it has been a breeze.
+
+picture this. you are living in the 50's, life is just *peachy*. war is over! you've got a new tv. you turn it on, watch tv, turn it off. simple. you don't have choice in what to watch (not really anyways).
+
+60s & 70s, you get some color in your set, and you get a few more channels, and elvis got a fancy remote according to the beatles! how exciting! but, still, much of the same.
+
+then, jump to the 80s & 90s. all of this television you are consuming is still analog. the video (at this point electrons) is shot at the screen in horizontal lines, thousands of times a second, and provided it syncs correctly, you have a picture. this is simple. some engineer thought this through and made it happen. this is good. analog crt tv just worked (smash players, anyone?)
+
+now, go to the (late) 2000s/2010s.
+
+you have your shiny new flat panel lcd display. it has great colors, doesn't do that crt ring tinnitus thing, and now has the caveman version of the apps we despise so much now. you don't have to go to redbox anymore, blockbuster doesnt EXIST anymore, and this new netflix thing is really pushing for online video. this is cool, broadband internet is being widely adopted, and i'm watching my favorite adam sandler movie from the couch (don't tell anyone, but i think in most cases he is overrated)
+
+don't get me wrong, this also was very clunky, but it was the first iteration of this kind of thing. the modern web and emerging technologies allowed this to become a thing, and many things have changed since then. but it was usable, exciting, and less ad-ridden
+
+people still went to movie theaters in those days. i've seen a lot of movies in the 2020s alone, and the theater is almost always relatively empty, at least aside from the ending of the marvel yada yada & barbenheimer... but you know i still love and respect u georgia theater company ❤️
+
+mid to late 2010s/2020s (so far) were much of the same. tvs got bigger and fancier, but not faster. the biggest issue that i always think about with these tvs is that the hardware to run these fancy (often convoluted) beasts is just not powerful enough to run whatever software and apps that these companies ship (and often the stuff that comes on the tv!)
+
+another thing is the built in apps! if i want to use your app i will download it! no! what do you mean i have to learn a new ui? this sucks. (that is very subjective, i know, but boo hoo this is my blog post)
+
+this culminates in the stupid shit index
+
+<TVComplexityChart />
+
+these could be any random numbers up to the 2000s, really, because everyone had different sets and someone's experience could be easier than someone else's.
+
+notice how really, the stupid shit is low up until the 2000s. i wasn't really there, but i have used tvs from that era before, and i have heard about the struggles of having multiple input sources, and setting up your whole tv setup (vcr, dvd player, set top box, video game consoles). remember your grandma's whole tv setup from that time? it was all tied into one input switcher and complex, but not what we're dealing with now.
+
+# the asterisk
+
+i'll be the first to say that i won't touch an apple computer with a 10 foot pole. their design language is actually super appealing, but i don't like that you really can't do a whole lot of diy customization and hacking. this, of course, is due to their security and privacy first creed, and i get that. it just isn't windows and certainly isn't linux. i do have an iphone, because again, i like the design language. everything feels nice and just works (tm) (most of the time)
+
+this being said,
+
+# the apple tv
+
+on start, it asks you to put your phone next to it and autoconfigures the unit for you. that was nice. no scanning qr codes to sign in or using the remote to slowly key in your user:pass. that's dumb. they got this right. the remote feels sleek and chilly due to its (aluminum?) body, and works really well when you talk to it.
+
+before apple tv, i had used several fire sticks over the years, as well as a roku tv. these had the same problem as the tv's that they were running on: the hardware just wasn't as powerful as it should have been. the menus would lag, playback would hang, playback would start slowly, and the ui design was just horrid in some cases.
+
+# design language
+
+"stop saying that!" no. it is important and makes sense. all of the apps that i have encountered and used on the apple tv have, at very least, matched the way that the rest of the ui in the apple ecosystem look. if you think this isn't important, you should, think about how much time you spend in menus. if it doesn't feel good to use, i won't use it!
+
+# voice
+
+the voice functionality is blazing fast on the apple tv, and the button is in a perfect place on the remote. i've never found siri particularly useful on iphone, but damn it works well on apple tv. also, just saying "hey siri, what did he say" and it rewinds 10 seconds and turns subtitles on? friggin magic.
+
+# tHe ApPlE eCoSyStEm
+
+![yeah, yeah, make fun](https://cdn.fishers.blog/img/spongebob.jpg)
+
+i know. this is way too overrated everywhere. i am not an apple fanboy. i do, however, like my shit to *just work* (tm), and it's certainly a bonus if all of my shit talks to each other to make my life easier. nobody has this down better than apple. again with the "feels good to use", because it's easy and i don't even think about it. want to sign into an apple thingy? it's gonna send you a little notification on your phone. want to type something on your tv from the phone? it'll ask when you're prompted to enter text on the tv. want to sail the seas and play video from your phone? just airplay.
+
+make fun of me for this take, but it just works. can your fire stick do that jeff? i didn't think so.
+
+# the remote
+
+i don't want your prime video, hulu, netflix, disney plus, tubi, fleebo zeep zoop buttons on my damn remote. if i don't want you on my tv, i won't have you. in retrospect, i have always thought this was weird (even when i was a kid when we got our first vizio smart tv). the buttons are all in the right place, and make very satisfying clicks. the gestures to scroll on the center button (which might i add is a touchpad center button) work very well, and even have little animations that interact with the touchpad when hovering over an app or menu item.
+
+# polish
+
+speaking of animations, that's just the thing. the hardware is good enough where they don't have to worry about animations bogging the thing down. i know that apple has been accused of planned obsolesence, but that's another story. i find that because it is pleasant to use, the act of finding something to watch is as frictionless as possible
+
+# final notes
+
+my apple tv does nothing (pretty much) that your fire stick can't do. it does, however, do the basic shit that every device of this type should do really well. i find that if it doesn't feel good to use, there is friction, and even though it won't stop me from watching my tv, it just makes it less pleasant. it feels luxury. it feels good to use. you may think these are all silly things to do, but that is an important thing to do in life, making things frictionless, repeatable, and expectable. don't get me wrong, life is full of times where you are supposed to have an adventure and the unexpected is what makes it fun, but this is not one of those times.
+
+i am watching my tv and i just want it to fuckin work.
+
+fm

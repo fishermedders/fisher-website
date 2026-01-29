@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import Home from "./pages/Home.mdx";
 import Navbar from "./components/Navbar.jsx";
 import Fisher from "./pages/Fisher.mdx";
@@ -9,6 +10,13 @@ import Posts from "./pages/Posts.mdx";
 import PostPage from "./pages/PostPage.jsx";
 
 export default function App() {
+  useEffect(() => {
+    const savedStatus = localStorage.getItem("rainbowEnabled");
+    if (savedStatus === "true") {
+      document.documentElement.classList.add("rainbow-mode");
+    }
+  }, []);
+
   return (
     <BrowserRouter>
       <Navbar />

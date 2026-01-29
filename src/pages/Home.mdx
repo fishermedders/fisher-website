@@ -1,10 +1,53 @@
 import PostList from "../components/PostList.jsx";
 import Categories from "../components/Categories.jsx";
 import Seperator from "../components/Seperator.jsx";
+import React, { useState, useEffect } from 'react';
+
+export const MagicImage = ({ src }) => {
+  const [isRainbow, setIsRainbow] = useState(
+    localStorage.getItem('rainbowEnabled') === 'true'
+  );
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (isRainbow) {
+      root.classList.add('rainbow-mode');
+      localStorage.setItem('rainbowEnabled', 'true');
+    } else {
+      root.classList.remove('rainbow-mode');
+      localStorage.setItem('rainbowEnabled', 'false');
+    }
+  }, [isRainbow]);
+
+  return (
+    <div 
+      onClick={() => setIsRainbow(!isRainbow)}
+      style={{ 
+        position: 'relative', 
+        display: 'inline-block', 
+        cursor: 'pointer',
+        backgroundColor: isRainbow ? 'var(--theme-invert)' : 'transparent',
+        transition: 'background-color 0.3s'
+      }}
+    >
+      <img
+        src="https://cdn.fishers.blog/img/maplestreetband-6.jpg"
+        alt="Magic TV"
+        style={{ 
+          display: 'block',
+          width: '100%',
+          mixBlendMode: isRainbow ? 'multiply' : 'normal',
+          filter: isRainbow ? 'grayscale(50%)' : 'none',
+          transition: '0.3s'
+        }}
+      />
+    </div>
+  );
+};
 
 <div style={{ display: "flex", alignItems: "flex-start", gap: "20px" }}>
   <div style={{ flex: "0 0 25%" }}>
-      <img src="https://cdn.fishers.blog/img/maplestreetband-6.jpg" />
+      <MagicImage />
   </div>
 
   <div style={{flex: "1" }}>
