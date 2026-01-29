@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+
+:root {
+    --theme-invert: #f1f1f1;
+}
+
+body {
+    background-color: #161616;
+}
+
+html {
+    color: var(--theme-invert);
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+nav,
+main {
+    max-width: 935px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}
