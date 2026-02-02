@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Fisher's Blog]]></title>
+        <description><![CDATA[Latest posts from my corner of the web]]></description>
+        <link>https://fishers.blog</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Mon, 02 Feb 2026 21:18:53 GMT</lastBuildDate>
+        <atom:link href="https://fishers.blog/rss.xml" rel="self" type="application/rss+xml"/>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[How Apple TV Changed the way I watch TV]]></title>
+            <description><![CDATA[apple tv is actually pretty cool, yo!...]]></description>
+            <link>https://fishers.blog/how-apple-tv-changed-the-way-i-watch-tv</link>
+            <guid isPermaLink="true">https://fishers.blog/how-apple-tv-changed-the-way-i-watch-tv</guid>
+            <category><![CDATA[technology]]></category>
+            <pubDate>Thu, 29 Jan 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[I took a picture of the stars!]]></title>
+            <description><![CDATA[a post about how actually alright an iphone camera is...]]></description>
+            <link>https://fishers.blog/i-took-a-picture-of-the-stars</link>
+            <guid isPermaLink="true">https://fishers.blog/i-took-a-picture-of-the-stars</guid>
+            <category><![CDATA[journal entries]]></category>
+            <category><![CDATA[photography]]></category>
+            <category><![CDATA[writing]]></category>
+            <pubDate>Fri, 26 Sep 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Eyes, a sonnet]]></title>
+            <description><![CDATA[in this episode, fisher writes a sonnet!...]]></description>
+            <link>https://fishers.blog/eyes-a-sonnet</link>
+            <guid isPermaLink="true">https://fishers.blog/eyes-a-sonnet</guid>
+            <category><![CDATA[sonnets]]></category>
+            <category><![CDATA[writing]]></category>
+            <pubDate>Wed, 24 Sep 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Satire (but also not)]]></title>
+            <description><![CDATA[haha...]]></description>
+            <link>https://fishers.blog/satire-but-also-not</link>
+            <guid isPermaLink="true">https://fishers.blog/satire-but-also-not</guid>
+            <category><![CDATA[shitposts]]></category>
+            <category><![CDATA[writing]]></category>
+            <pubDate>Sat, 20 Sep 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[A haiku. Or maybe a set of them.]]></title>
+            <description><![CDATA[a buncha' haikus!...]]></description>
+            <link>https://fishers.blog/a-haiku</link>
+            <guid isPermaLink="true">https://fishers.blog/a-haiku</guid>
+            <category><![CDATA[haiku]]></category>
+            <category><![CDATA[writing]]></category>
+            <pubDate>Fri, 19 Sep 2025 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
