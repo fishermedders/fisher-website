@@ -1,0 +1,49 @@
+.hero-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.image-wrapper {
+    flex: 0 0 25%;
+    z-index: 1;
+}
+
+.text-wrapper {
+    flex: 1;
+    z-index: 2;
+}
+
+@media (max-width: 600px) {
+    .hero-container {
+        display: block;
+    }
+
+    .image-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        opacity: 0.6;
+
+        -webkit-mask-image: linear-gradient(
+            to bottom,
+            black 50%,
+            transparent 90%
+        );
+        mask-image: linear-gradient(to bottom, black 50%, transparent 90%);
+    }
+
+    .text-wrapper {
+        position: relative;
+        padding-top: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        teext-shadow:
+            0 0 10px white,
+            0 0 2px white;
+        pointer-events: none;
+    }
+}

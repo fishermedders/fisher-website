@@ -2,6 +2,7 @@ import PostList from "../components/PostList.jsx";
 import Categories from "../components/Categories.jsx";
 import Seperator from "../components/Seperator.jsx";
 import React, { useState, useEffect } from 'react';
+import "./home.css";
 
 export const MagicImage = ({ src }) => {
   const [isRainbow, setIsRainbow] = useState(
@@ -45,22 +46,22 @@ export const MagicImage = ({ src }) => {
   );
 };
 
-<div style={{ display: "flex", alignItems: "flex-start", gap: "20px" }}>
-  <div style={{ flex: "0 0 25%" }}>
+<div className="hero-container">
+  <div className="image-wrapper">
       <MagicImage />
   </div>
 
-  <div style={{flex: "1" }}>
-    # hi
-    i am fisher medders. this is my website. it's all opinions that you may or may not agree with. it is thoughts, it is writing, and lists of fun kooky things.
-    
-    [it is written from scratch](/site), it is beautiful, it is ugly, and it is fun
-    
-    poke around to see the things pulled straight from my noggin that i think the public should be able to see
-    
-    if you're somehow here and you don't have any idea who i am, welcome, and feel free to see the [narcissistic things i have to say about myself](/fisher)
-
+  <div className="text-wrapper">
+      # hi
+      i am fisher medders. this is my website. it's all opinions that you may or may not agree with. it is thoughts, it is writing, and lists of fun kooky things.
+      
+      [it is written from scratch](/site), it is beautiful, it is ugly, and it is fun
+      
+      poke around to see the things pulled straight from my noggin that i think the public should be able to see
+      
+      if you're somehow here and you don't have any idea who i am, welcome, and feel free to see the [narcissistic things i have to say about myself](/fisher)
   </div>
 </div>
+
 <Seperator />
 <Categories/>
