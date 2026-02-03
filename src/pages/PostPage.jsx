@@ -29,6 +29,7 @@ function PostPage() {
               {index < post.tags.length - 1 ? ", " : ""}
             </span>
           ))}
+          {post.status ? " • status: " + post.status : ""}
         </small>
       </div>
       <hr />
