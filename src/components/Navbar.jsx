@@ -6,7 +6,6 @@ export default function Navbar() {
     <header>
       <nav className="navbar" aria-label="Main navigation">
         <div className="nav-container">
-          {/* Brand Section: Stays on the left */}
           <div className="nav-brand">
             <span>
               <b>fm</b>
@@ -14,7 +13,6 @@ export default function Navbar() {
             <span className="separator">|</span>
           </div>
 
-          {/* Links Section: Wraps as needed */}
           <ul className="nav-links">
             <li>
               <Link to="/">home</Link>
@@ -33,6 +31,9 @@ export default function Navbar() {
             </li>
             <li>
               <Link to="/site">site</Link>
+            </li>
+            <li>
+              <Link to="/posts">posts</Link>
             </li>
           </ul>
         </div>
