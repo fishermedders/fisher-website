@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./navbar.css";
 
 export default function Navbar() {
@@ -12,22 +13,22 @@ export default function Navbar() {
           </li>
           <li>|</li>
           <li>
-            <a href="/">home</a>
+            <Link to="/">home</Link>
           </li>
           <li>
-            <a href="/fisher">fisher</a>
+            <Link to="/fisher">fisher</Link>
           </li>
           <li>
-            <a href="/music">music</a>
+            <Link to="/music">music</Link>
           </li>
           <li>
-            <a href="/movies">movies</a>
+            <Link to="/movies">movies</Link>
           </li>
           <li>
-            <a href="/television">television</a>
+            <Link to="/television">television</Link>
           </li>
           <li>
-            <a href="/site">site</a>
+            <Link to="/site">site</Link>
           </li>
         </ul>
       </nav>

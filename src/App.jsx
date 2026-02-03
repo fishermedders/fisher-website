@@ -28,7 +28,7 @@ export default function App() {
           <Route path="/music" element={<Music />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/site" element={<Site />} />
-          <Route path="/posts" element={<Posts />} />
+          <Route path="/posts/:tag?" element={<Posts />} />
           <Route path="/television" element={<Television />} />
           <Route path="/:slug" element={<PostPage />} />
         </Routes>

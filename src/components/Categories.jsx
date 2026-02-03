@@ -68,7 +68,6 @@ export function Categories({
         </Link>
       </section>
 
-      {/* 2. The Tag-Based Squares */}
       {sortedTags.map((tag) => (
         <section key={tag} className="post-categories-post">
           <h2
@@ -99,7 +98,6 @@ export function Categories({
             ))}
           </ul>
 
-          {/* Tag-specific "See All" or count info */}
           {groups[tag].length > 5 && (
             <div
               style={{
@@ -112,6 +110,19 @@ export function Categories({
               + {groups[tag].length - 5} more posts in {tag}
             </div>
           )}
+
+          <Link
+            to={`/posts/${tag}`}
+            style={{
+              fontSize: "0.8rem",
+              display: "block",
+              marginTop: "10px",
+              textDecoration: "underline",
+              color: "#666",
+            }}
+          >
+            See All
+          </Link>
         </section>
       ))}
     </div>
