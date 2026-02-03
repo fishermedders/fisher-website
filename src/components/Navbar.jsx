@@ -24,6 +24,9 @@ export default function Navbar() {
             <a href="/movies">movies</a>
           </li>
           <li>
+            <a href="/television">television</a>
+          </li>
+          <li>
             <a href="/site">site</a>
           </li>
         </ul>

@@ -7,6 +7,7 @@ import Music from "./pages/Music.mdx";
 import Movies from "./pages/Movies.mdx";
 import Site from "./pages/Site.mdx";
 import Posts from "./pages/Posts.mdx";
+import Television from "./pages/Television.mdx";
 import PostPage from "./pages/PostPage.jsx";
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/movies" element={<Movies />} />
           <Route path="/site" element={<Site />} />
           <Route path="/posts" element={<Posts />} />
+          <Route path="/television" element={<Television />} />
           <Route path="/:slug" element={<PostPage />} />
         </Routes>
       </main>

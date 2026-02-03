@@ -4,9 +4,17 @@
         <description><![CDATA[Latest posts from my corner of the web]]></description>
         <link>https://fishers.blog</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 02 Feb 2026 21:18:53 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Feb 2026 07:35:02 GMT</lastBuildDate>
         <atom:link href="https://fishers.blog/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[on this side of love and loss]]></title>
+            <description><![CDATA[the hard shit you learn about losing people...]]></description>
+            <link>https://fishers.blog/on-this-side-of-love-and-loss</link>
+            <guid isPermaLink="true">https://fishers.blog/on-this-side-of-love-and-loss</guid>
+            <category><![CDATA[life]]></category>
+            <pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[How Apple TV Changed the way I watch TV]]></title>
             <description><![CDATA[apple tv is actually pretty cool, yo!...]]></description>
