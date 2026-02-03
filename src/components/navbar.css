@@ -1,17 +1,31 @@
-nav ul {
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    margin: 20px 0 10px 0;
+    border-bottom: medium double var(--theme-invert);
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    white-space: nowrap;
+}
+
+.nav-links {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem 1rem;
     list-style: none;
-    padding: 10px;
-    margin: 20px 0 10px 0;
-    border-bottom: medium double var(--theme-invert);
-    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
     text-decoration: none;
-    padding: 0.5rem 0.75rem;
+    color: inherit;
 }
 
 nav a:focus-visible {
