@@ -48,13 +48,33 @@ async function generateMetadata() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>${SITE_URL}/</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>yearly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>${SITE_URL}/posts</loc>
+    <loc>${SITE_URL}/fisher</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.99</priority>
+  </url>
+  <url>
+    <loc>${SITE_URL}/music</loc>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.98</priority>
+  </url>
+  <url>
+    <loc>${SITE_URL}/movies</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>${SITE_URL}/television</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>${SITE_URL}/site</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
   </url>
   ${posts
     .map(
