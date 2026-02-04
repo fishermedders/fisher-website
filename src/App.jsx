@@ -4,10 +4,11 @@ import Home from "./pages/Home.mdx";
 import Navbar from "./components/Navbar.jsx";
 import Fisher from "./pages/Fisher.mdx";
 import Music from "./pages/Music.mdx";
-import Movies from "./pages/Movies.mdx";
+import Movies from "./pages/Movies/Movies.mdx";
 import Site from "./pages/Site.mdx";
 import Posts from "./pages/Posts.mdx";
 import Television from "./pages/Television.mdx";
+import Todo from "./pages/Todo.mdx";
 import PostPage from "./pages/PostPage.jsx";
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/site" element={<Site />} />
           <Route path="/posts/:tag?" element={<Posts />} />
           <Route path="/television" element={<Television />} />
+          <Route path="/site/todo" element={<Todo />} />
           <Route path="/:slug" element={<PostPage />} />
         </Routes>
       </main>
