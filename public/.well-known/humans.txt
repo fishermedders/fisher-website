@@ -1,0 +1,13 @@
+/* TEAM */
+	Everything: Fisher Medders
+	Contact: fishermedders [you know what goes here] gmail.com
+	From: Brunswick, GA, USA
+
+/* SITE */
+	Last update: ???
+	Language: English
+	Doctype: HTML5
+	IDE: Zed
+	How: Cloudflare Pages, Cloudflare R2, GitHub
+
+See, this is an exercise in comedy, because I am the only human. It is only me! How comedic!

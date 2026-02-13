@@ -10,6 +10,7 @@ import Posts from "./pages/Posts.mdx";
 import Television from "./pages/Television.mdx";
 import Todo from "./pages/Todo.mdx";
 import PostPage from "./pages/PostPage.jsx";
+import Tweets from "./pages/Tweets.mdx";
 
 export default function App() {
   useEffect(() => {
@@ -29,8 +30,9 @@ export default function App() {
           <Route path="/music" element={<Music />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/site" element={<Site />} />
-          <Route path="/posts/:tag?" element={<Posts />} />
           <Route path="/television" element={<Television />} />
+          <Route path="/tweets" element={<Tweets />} />
+          <Route path="/posts/:tag?" element={<Posts />} />
           <Route path="/site/todo" element={<Todo />} />
           <Route path="/:slug" element={<PostPage />} />
         </Routes>
