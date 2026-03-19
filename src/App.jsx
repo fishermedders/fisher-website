@@ -22,8 +22,11 @@ export default function App() {
 
   return (
     <BrowserRouter>
+      <a href="#main-content" class="skip-to-main-content-link">
+        Skip to main content
+      </a>
       <Navbar />
-      <main>
+      <main id="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/fisher" element={<Fisher />} />
