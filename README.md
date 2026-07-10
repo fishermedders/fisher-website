@@ -1,4 +1,4 @@
-# fisher's website (fishers.blog)
+# fisher's website (blog.fisher.medde.rs)
 
 aw yea mate you found it this is the repo!
 

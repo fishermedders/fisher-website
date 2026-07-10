@@ -21,20 +21,20 @@ export const MagicImage = ({ src }) => {
   }, [isRainbow]);
 
   return (
-    <div 
+    <div
       onClick={() => setIsRainbow(!isRainbow)}
-      style={{ 
-        position: 'relative', 
-        display: 'inline-block', 
+      style={{
+        position: 'relative',
+        display: 'inline-block',
         cursor: 'pointer',
         backgroundColor: isRainbow ? 'var(--theme-invert)' : 'transparent',
         transition: 'background-color 0.3s'
       }}
     >
       <img
-        src="https://cdn.fishers.blog/img/maplestreetband-6.jpg"
+        src="https://cdn.blog.fisher.medde.rs/img/maplestreetband-6.jpg"
         alt="Magic TV"
-        style={{ 
+        style={{
           display: 'block',
           width: '100%',
           mixBlendMode: isRainbow ? 'multiply' : 'normal',
@@ -54,13 +54,13 @@ export const MagicImage = ({ src }) => {
   <div className="text-wrapper">
       # hi
       i am fisher medders. this is my website. it's all opinions that you may or may not agree with. it is thoughts, it is writing, and lists of fun kooky things.
-      
+
       [it is written from scratch](/site), it is beautiful, it is ugly, and it is fun
-      
+
       poke around to see the things pulled straight from my noggin that i think the public should be able to see
-      
+
       if you're somehow here and you don't have any idea who i am, welcome, and feel free to see the [narcissistic things i have to say about myself](/fisher)
-      
+
       this site is really meant to be a "digital garden" of sorts, and thus should always be considered work in progress. blog posts are marked with status for this reason.
   </div>
 </div>
