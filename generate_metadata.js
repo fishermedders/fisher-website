@@ -5,7 +5,7 @@ import RSS from "rss";
 
 const POSTS_DIR = path.join(process.cwd(), "src/posts");
 const PUBLIC_DIR = path.join(process.cwd(), "public");
-const SITE_URL = "https://blog.fisher.medde.rs";
+const SITE_URL = "https://fisher.medde.rs";
 
 async function generateMetadata() {
   const files = fs

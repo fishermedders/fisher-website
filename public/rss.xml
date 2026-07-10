@@ -2,32 +2,32 @@
     <channel>
         <title><![CDATA[Fisher's Blog]]></title>
         <description><![CDATA[Latest posts from my corner of the web]]></description>
-        <link>https://blog.fisher.medde.rs</link>
+        <link>https://fisher.medde.rs</link>
         <generator>RSS for Node</generator>
         <lastBuildDate>Tue, 03 Feb 2026 07:35:02 GMT</lastBuildDate>
-        <atom:link href="https://blog.fisher.medde.rs/rss.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://fisher.medde.rs/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[on this side of love and loss]]></title>
             <description><![CDATA[the hard shit you learn about losing people...]]></description>
-            <link>https://blog.fisher.medde.rs/on-this-side-of-love-and-loss</link>
-            <guid isPermaLink="true">https://blog.fisher.medde.rs/on-this-side-of-love-and-loss</guid>
+            <link>https://fisher.medde.rs/on-this-side-of-love-and-loss</link>
+            <guid isPermaLink="true">https://fisher.medde.rs/on-this-side-of-love-and-loss</guid>
             <category><![CDATA[life]]></category>
             <pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[How Apple TV Changed the way I watch TV]]></title>
             <description><![CDATA[apple tv is actually pretty cool, yo!...]]></description>
-            <link>https://blog.fisher.medde.rs/how-apple-tv-changed-the-way-i-watch-tv</link>
-            <guid isPermaLink="true">https://blog.fisher.medde.rs/how-apple-tv-changed-the-way-i-watch-tv</guid>
+            <link>https://fisher.medde.rs/how-apple-tv-changed-the-way-i-watch-tv</link>
+            <guid isPermaLink="true">https://fisher.medde.rs/how-apple-tv-changed-the-way-i-watch-tv</guid>
             <category><![CDATA[technology]]></category>
             <pubDate>Thu, 29 Jan 2026 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[I took a picture of the stars!]]></title>
             <description><![CDATA[a post about how actually alright an iphone camera is...]]></description>
-            <link>https://blog.fisher.medde.rs/i-took-a-picture-of-the-stars</link>
-            <guid isPermaLink="true">https://blog.fisher.medde.rs/i-took-a-picture-of-the-stars</guid>
+            <link>https://fisher.medde.rs/i-took-a-picture-of-the-stars</link>
+            <guid isPermaLink="true">https://fisher.medde.rs/i-took-a-picture-of-the-stars</guid>
             <category><![CDATA[journal entries]]></category>
             <category><![CDATA[photography]]></category>
             <category><![CDATA[writing]]></category>
@@ -36,8 +36,8 @@
         <item>
             <title><![CDATA[Eyes, a sonnet]]></title>
             <description><![CDATA[in this episode, fisher writes a sonnet!...]]></description>
-            <link>https://blog.fisher.medde.rs/eyes-a-sonnet</link>
-            <guid isPermaLink="true">https://blog.fisher.medde.rs/eyes-a-sonnet</guid>
+            <link>https://fisher.medde.rs/eyes-a-sonnet</link>
+            <guid isPermaLink="true">https://fisher.medde.rs/eyes-a-sonnet</guid>
             <category><![CDATA[sonnets]]></category>
             <category><![CDATA[writing]]></category>
             <pubDate>Wed, 24 Sep 2025 00:00:00 GMT</pubDate>
@@ -45,8 +45,8 @@
         <item>
             <title><![CDATA[Satire (but also not)]]></title>
             <description><![CDATA[haha...]]></description>
-            <link>https://blog.fisher.medde.rs/satire-but-also-not</link>
-            <guid isPermaLink="true">https://blog.fisher.medde.rs/satire-but-also-not</guid>
+            <link>https://fisher.medde.rs/satire-but-also-not</link>
+            <guid isPermaLink="true">https://fisher.medde.rs/satire-but-also-not</guid>
             <category><![CDATA[shitposts]]></category>
             <category><![CDATA[writing]]></category>
             <pubDate>Sat, 20 Sep 2025 00:00:00 GMT</pubDate>
@@ -54,8 +54,8 @@
         <item>
             <title><![CDATA[A haiku. Or maybe a set of them.]]></title>
             <description><![CDATA[a buncha' haikus!...]]></description>
-            <link>https://blog.fisher.medde.rs/a-haiku</link>
-            <guid isPermaLink="true">https://blog.fisher.medde.rs/a-haiku</guid>
+            <link>https://fisher.medde.rs/a-haiku</link>
+            <guid isPermaLink="true">https://fisher.medde.rs/a-haiku</guid>
             <category><![CDATA[haiku]]></category>
             <category><![CDATA[writing]]></category>
             <pubDate>Fri, 19 Sep 2025 00:00:00 GMT</pubDate>
